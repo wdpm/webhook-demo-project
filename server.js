@@ -7,6 +7,9 @@ let router = new Router();
 router
     .post('/payload', (ctx, next) => {
         console.log(ctx);
+
+        // response json
+        ctx.body = { 'code': 'SUCCESS'}
     })
 
 router.get('/', (ctx, next) => {
